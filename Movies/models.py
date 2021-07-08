@@ -6,11 +6,11 @@ import uuid
 
 # Create your models here.
 AGE_CHOICES=(
-    ('all','All')
-    ('kids','Kids')
+    ('All','All'),
+    ('kids','kids')
 )
 MOVIE_CHOICE=(
-    ('seasonal','Seasonal')
+    ('seasonal','Seasonal'),
     ('single','Single')
 )
 
@@ -35,3 +35,4 @@ class movies(models.Model):
 class Video(models.Model):
     title=models.CharField(max_length=30,blank=True, null=True)
     file=models.FileField(upload_to='movies')
+
